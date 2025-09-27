@@ -1,0 +1,8 @@
+mode=drun
+width=30%
+height=30%
+prompt=Wofi
+term=ghostty
+hide_scroll=true
+insensitive=true
+gtk_dark=true
