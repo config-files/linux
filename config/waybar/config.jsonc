@@ -1,0 +1,68 @@
+{
+  "position": "bottom",
+  "height": 48,
+
+  "modules-left": ["hyprland/workspaces"],
+
+  "modules-right": [
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "backlight",
+    "network",
+    "battery",
+    "custom/fcitx5",
+    "clock"
+  ],
+  "cpu": {
+    "interval": 1,
+    "format": "CPU\n{usage}",
+    "states": {
+      "high": 80
+    },
+    "tooltip": false
+  },
+  "memory": {
+    "interval": 1,
+    "format": "Memory\n{percentage}",
+    "states": {
+      "high": 80
+    },
+    "tooltip": false
+  },
+  "pulseaudio": {
+    "format": "Volume\n{volume}",
+    "scroll-step": 5,
+    "tooltip": false
+  },
+  "backlight": {
+    "interval": 1,
+    "format": "Brightness\n{percent}",
+    "scroll-step": 5,
+    "tooltip": false
+  },
+  "network": {
+    "interval": 1,
+    "format": "Wi-Fi\n{signalStrength}",
+    "tooltip": false
+  },
+  "battery": {
+    "interval": 1,
+    "states": {
+      "low": 20
+    },
+    "format": "Battery\n{capacity}",
+    "tooltip": false
+  },
+  "custom/fcitx5": {
+    "exec": "[ $(fcitx5-remote -n) = keyboard-us ] && echo English || echo 한국어",
+    "interval": 1,
+    "format": "Language\n{}",
+    "tooltip": false
+  },
+  "clock": {
+    "interval": 1,
+    "format": "{:%I:%M:%S %p\n%Y.%m.%d %a}",
+    "tooltip": false
+  }
+}
