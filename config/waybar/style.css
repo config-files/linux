@@ -1,0 +1,53 @@
+* {
+  font-family: "D2Coding";
+  font-size: 16px;
+}
+
+window#waybar {
+  background-color: #202020;
+}
+
+#workspaces button {
+  padding: 0 12px;
+  border: none;
+  border-radius: 0;
+  color: #808080;
+}
+
+#workspaces button:hover {
+  background: #202020;
+  color: #e0e0e0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#workspaces button.active {
+  background: #202020;
+  color: #e0e0e0;
+}
+
+#workspaces button.urgent {
+  color: #ff8080;
+}
+
+#cpu,
+#memory,
+#pulseaudio,
+#backlight,
+#network,
+#battery,
+#custom-fcitx5,
+#clock {
+  padding: 0 12px;
+  color: #e0e0e0;
+}
+
+#cpu.high,
+#memory.high,
+#battery.low:not(.charging) {
+  color: #ff8080;
+}
+
+#battery.charging {
+  color: #80ff80;
+}
